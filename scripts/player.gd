@@ -25,6 +25,8 @@ var dash_timer = 0.0
 @onready var animated_sprite = $AnimatedSprite2D
 
 func _physics_process(delta):
+	GameManager.update_speed_label(velocity.x)
+	
 	var direction = Input.get_axis("control_left", "control_right")
 	var target_velocity_x = direction * MAX_WALK_SPEED
 

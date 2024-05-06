@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Music="*res://scenes/music.tscn"
+Hud="*res://scenes/hud.tscn"
+GameManager="*res://scripts/game_manager.gd"
 
 [importer_defaults]
 

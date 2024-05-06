@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://umss2kct0sg1"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_imjys"]
+[ext_resource type="FontFile" uid="uid://yffequ83b4n5" path="res://assets/fonts/PixelOperator8.ttf" id="1_lehi7"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_imjys")
+
+[node name="Holder" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SpeedLabel" type="Label" parent="Holder"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_lehi7")
+theme_override_font_sizes/font_size = 16
+text = "Speed: 0
+"
+
+[node name="CoinLabel" type="Label" parent="Holder"]
+offset_top = 24.0
+offset_right = 98.0
+offset_bottom = 47.0
+theme_override_fonts/font = ExtResource("1_lehi7")
+theme_override_font_sizes/font_size = 16
+text = "Coins: 0"
